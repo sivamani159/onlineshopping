@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+<body>
+    <div>
+        <div class="c1">
+            <header>
+                <h1>this is fashion page</h1>
+            </header>
+            <a href="{% url 'app1:ajio' %}">
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/23082022-unisex-d-topbanner-p5-brands-3070.jpg" alt="" width="800" height="400">
+            </a>
+        </div>
+        <div class="c2">
+            <header>
+                <h1>this is eloctronics page</h1>
+            </header>
+            <a href="{% url 'app1:gopaldigitals' %}">
+                <img src="https://thumbs.dreamstime.com/z/many-used-modern-electronic-gadgets-use-white-floor-reuse-recycle-concept-top-view-164230611.jpg" alt="" width="800" height="400">
+            </a>
+        </div>
+        <div class="c3">
+            <footer>
+                <h1>thanks for shopping</h1>
+            </footer>
+        </div>
+    </div> 
+</body>
+</html>

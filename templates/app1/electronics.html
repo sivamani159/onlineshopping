@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+<body>
+    <div class="c1">
+        <header>
+            <h1>this is electronics page</h1>
+        </header>
+    </div>
+    <div class="c2">
+        <a href="https://www.reliancedigital.in/?gclid=Cj0KCQjwguGYBhDRARIsAHgRm4_11f8UHHGXRVE2qSGngTt6Tr3so20Zmn2W00pSBCiPtFAbbJBUtywaAns8EALw_wcB">
+        {% if items %}
+        {% for items in items %}
+            <h1>{{items}}</h1>
+        {% endfor %}     
+        {% else %}
+           <h1>no category available</h1>
+        {% endif %}
+        </a> 
+    </div>
+    <div class="c3">
+        <footer>
+            <h1>thanks for shopping</h1>
+        </footer>
+    </div>
+</body>
+</html>
+

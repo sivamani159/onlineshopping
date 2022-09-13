@@ -1,0 +1,18 @@
+.c1{
+    color: brown;
+    background-color: aqua;
+    text-align: center;
+}
+.c2{
+    color: aquamarine;
+    text-align: center;
+}
+.c3{
+    color: blue;
+    background-color: darkmagenta;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    bottom: fixed;
+}
+    
